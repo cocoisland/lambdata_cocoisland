@@ -9,3 +9,4 @@ TrainValTest_split.split(X,y) requires a two or more dimensions dataframe of num
 Feel free to initiate a pull request to add more data science libraries, or functions. 
 
 # Disclaimer
+The Lambdata_cocoisland is intended to be used for software you own and manage. The maintainer is not responsible for any negative actions that result from the use of the library.
