@@ -1,6 +1,7 @@
 from sklearn.model_selection import train_test_split
 
 class TrainValTest_split:
+    #What data types does this take?
     '''Generate X_train, y_train for X and y training,
                X_val, y_val for X and y validation,
                X_test, y_test for X and y testing.
