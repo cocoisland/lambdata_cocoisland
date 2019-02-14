@@ -1,22 +1,20 @@
 from sklearn.model_selection import train_test_split
 
 class TrainValTest_split:
-    #What data types does this take?
-    '''Generate X_train, y_train for X and y training,
-               X_val, y_val for X and y validation,
-               X_test, y_test for X and y testing.
-
-      Required Input: X, y
-      Default
-          split: train_size=0.8, val_size=0.1, test_size=0.1
-          random_state=None
-          shuffle=True
+'''
+   Required Input: X, y
+      X datatype must be of two dimensions or above of numerical values.
+      Y datatype could be Series or array of numerical or object values.
+        
+   Default Input
+      train_size=0.8, val_size=0.1, test_size=0.1
+      random_state=None, shuffle=True
          
    Eg
     data=TrainValTest_split()
     X_train, X_val, X_test, y_train, y_val, y_test = data.split(X,y)
     
-   '''
+ '''
 
     def __init__(self, train_size=0.8, val_size=0.1, test_size=0.1, 
                  random_state=None, shuffle=True):
