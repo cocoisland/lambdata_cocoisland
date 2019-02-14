@@ -2,4 +2,10 @@
 
 Lambdata_cocoisland is the first step to adding on useful libraries and functions for the development of Data Science study.
 
-This package of libraries are licensed by GNU license which is intended to be used for free and also whatever subsequent enhancements added, will be guaranteed to continuously free to all.
+# Usage
+TrainValTest_split.split(X,y) requires a two or more dimensions dataframe of numerical values for variable X and a series of numeric or object value for variable y. This function splits the X dataframe into several smaller dataframes for the purpose of training, validating and testing the data model.
+
+# Contribution
+Feel free to initiate a pull request to add more data science libraries, or functions. 
+
+# Disclaimer
