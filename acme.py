@@ -20,17 +20,10 @@ class Product:
     self.price=10
     self.weight=20
     self.flammability=0.5
-    self.identifier=random.randrange(1000000, 9999999)
-
-  def set_price(self, value):
-     self.price = value
-
-  def set_weight(self, value):
-     self.weight = value
-
+    self.identifier=random.randint(1000000, 9999999)
 
   def stealability(self):  
-    stealable = self.price/self.weight
+    stealable = self.price / self.weight
     if (stealable) < 0.5:
        return "Not so stealable..."
     elif (stealable >= 0.5 and stealable < 1.0):
@@ -49,8 +42,9 @@ class Product:
 
 class BoxingGlove(Product):
    def __init__(self, name):
-      Product.__init__(self,name)
-      self.weight = 10
+      super().__init__(name)
+      self.weight=10
+      
 
    def explode(self):
       return "...it's a glove."
